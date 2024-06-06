@@ -1,5 +1,78 @@
-h1{
-    border: 1px solid blue;
-    width: fit-content;
-    margin: auto;
+body {
+    background-color: #FFFDFB;
 }
+
+.header{
+    width: fit-content;
+    margin: 32px auto;
+}
+
+.header img{
+    width: 600px;
+}
+
+.merits {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.merit{
+    width: 580px;
+    height: 580px;
+    border-radius: 290px;
+    /* position: relative; */
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.merit1{
+    border: 10px solid #CED2BA;
+    top: 100px;
+    left: 60%;
+    transform: translateX(-20%);
+}
+
+.merit2{
+    border: 10px solid #D8E0E2;
+    top: 450px;
+    left: 40%;
+    transform: translateX(-80%);
+}
+.merit3{
+    border: 10px solid #D8D6D9;
+    top: 800px;
+    left: 60%;
+    transform: translateX(-20%);
+}
+
+
+.merit_content{
+    width: 90%;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translateY(-50%) translateX(-50%); 
+}
+
+.merit_title{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.merit_text{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
