@@ -2,20 +2,83 @@ body {
     background-color: #FFFDFB;
 }
 
+/*　フェードアニメーション用　*/
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+     
+    .fadeUpTrigger{
+        opacity: 0;
+    }
+
+/* マーカー引くアニメーション用 */
+.marker-anime {
+    background:linear-gradient(transparent 50%, rgba(255, 220, 123) 50%);
+    display: inline;
+  
+    /* 背景の繰り返しを停止 */
+    background-repeat: no-repeat;
+  
+    /* マーカーの横方向を0にして縮める */
+    background-size: 0% 100%;
+  
+    /* マーカーが引かれる速度を指定 */
+    transition:background-size 1.5s;
+  }
+  
+  /* マーカーが引かれる際に付与するクラス */
+  .marker-anime.on {
+    /* 横方向を100%にして、マーカーを引く */
+    background-size: 100% 100%;
+  }
+
 .header{
-    width: fit-content;
-    margin: 32px auto;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header .text{
+    width: 300px;
+}
+
+.header .frame{
+    width: 700px;
 }
 
 .header img{
-    width: 600px;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: rotateZ(10deg) translateY(-50%) translateX(-50%); 
+    opacity: 1;
 }
+
 
 .merits {
     position: relative;
     width: 100%;
-    height: 840px;
-    margin: 32px 0;
+    height: 980px;
+    margin: 64px 0;
 }
 
 .merit{
@@ -23,26 +86,27 @@ body {
     height: 380px;
     border-radius: 190px;
     position: absolute;
-
 }
+
+
 
 .merit1{
     border: 10px solid #CED2BA;
-    left: 60%;
-    transform: translateX(-20%);
+    right: 20%;
+    /* transform: translateX(-20%); */
 }
 
 .merit2{
     border: 10px solid #D8E0E2;
-    top: 220px;
-    left: 40%;
-    transform: translateX(-80%);
+    top: 260px;
+    left: 20%;
+    /* transform: translateX(-80%); */
 }
 .merit3{
     border: 10px solid #D8D6D9;
-    top: 440px;
-    left: 60%;
-    transform: translateX(-30%);
+    top: 580px;
+    right: 25%;
+    /* transform: translateX(-30%); */
 }
 
 
@@ -109,7 +173,8 @@ body {
 }
 
 .mustitems .title{
-    height: 48px;
+    height: 54px;
+    width: auto;
     padding: 4px 12px;
     background: linear-gradient(transparent 50%, #F4F0CD 50%);
     margin-bottom: 32px;
@@ -146,9 +211,9 @@ body {
 }
 
 .goodnotes .title{
-    height: 48px;
+    height: 64px;
     padding: 4px 12px;
-    background: linear-gradient(transparent 50%, #F4F0CD 50%);
+    /* background: linear-gradient(transparent 50%, #F4F0CD 50%); */
     margin-bottom: 32px;
 }
 
@@ -254,11 +319,13 @@ body {
 
 }
 
+
 .flex_column{
     display: flex;
-    column-gap: 120px;
+    column-gap: 32px;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .flex_row {
@@ -267,5 +334,53 @@ body {
     row-gap: 32px;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
+
+.ankimarker{
+    background-color: #E2E3D4;
+    text-align: center;
+}
+
+.ankimarker .title{
+    height: 64px;
+    background:linear-gradient(#30B010 50%, #30B010 50%);
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: right;
+    transition:background-size 1.5s;
+    padding: 0 12px;
+    margin-bottom: 24px;
+}
+
+  .ankimarker .title.on {
+    /* 横方向を100%にして、マーカーを引く */
+    background-size: 58% 100%;
+  }
+
+  .text_ankimarker{
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #30AF10;
+  }
+
+  .text_marker{
+    color: #0b0b0b;
+    background:linear-gradient(#FD6464 50%, #FD6464 50%);
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0% 100%;
+    transition:background-size 1.5s;
+    padding-left: 36px;
+    padding-right: 12px;
+  }
+
+
+
+
+  
