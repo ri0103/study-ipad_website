@@ -51,9 +51,10 @@ body {
   }
 
 .header{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .header .text{
@@ -111,7 +112,6 @@ body {
 
 
 .merit_content{
-    width: 90%;
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -133,6 +133,7 @@ body {
     font-family: "Yomogi", cursive;
     font-weight: 400;
     font-style: normal;
+    width: 280px;
 }
 
 .merit1 img{
@@ -173,7 +174,7 @@ body {
 }
 
 .mustitems .title{
-    height: 54px;
+    height: 72px;
     width: auto;
     padding: 4px 12px;
     background: linear-gradient(transparent 50%, #F4F0CD 50%);
@@ -344,7 +345,7 @@ body {
 }
 
 .ankimarker .title{
-    height: 64px;
+    height: 84px;
     background:linear-gradient(#30B010 50%, #30B010 50%);
     display: inline;
     background-repeat: no-repeat;
@@ -358,6 +359,21 @@ body {
   .ankimarker .title.on {
     /* 横方向を100%にして、マーカーを引く */
     background-size: 58% 100%;
+  }
+
+  .ankimarker_name_title{
+    display: flex;
+    column-gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .ankimarker_name_title img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #0f0f0f;
   }
 
   .text_ankimarker{
@@ -375,9 +391,8 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 0% 100%;
-    transition:background-size 1.5s;
-    padding-left: 36px;
-    padding-right: 12px;
+    transition:background-size 3s;
+    padding: 0 12px;
   }
 
 
