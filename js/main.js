@@ -33,7 +33,7 @@ $(document).ready(function() {
 
         // ふわっ
         $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
-        var elemPos = $(this).offset().top+200;//要素より、50px上の
+        var elemPos = $(this).offset().top+100;//要素より、50px上の
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
         if (scroll >= elemPos - windowHeight){

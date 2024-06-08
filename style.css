@@ -179,6 +179,7 @@ body {
     padding: 4px 12px;
     background: linear-gradient(transparent 50%, #F4F0CD 50%);
     margin-bottom: 32px;
+    filter: drop-shadow(2px 2px 4px #b5b5b5);
 }
 
 .mustitems img{
@@ -216,6 +217,7 @@ body {
     padding: 4px 12px;
     /* background: linear-gradient(transparent 50%, #F4F0CD 50%); */
     margin-bottom: 32px;
+    filter: drop-shadow(2px 2px 4px #b5b5b5);
 }
 
 .goodnotes_title{
@@ -308,7 +310,17 @@ body {
     background: linear-gradient(transparent 50%, #E7F5E4 50%);
     width: fit-content;
     padding: 4px 10px;
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0% 100%;
+    transition:background-size 1.2s;
 }
+
+.goodnotes .item .topic.on {
+    /* 横方向を100%にして、マーカーを引く */
+    background-size: 100% 100%;
+  }
 
 .goodnotes .item .expl{
     font-family: "Yomogi", cursive;
@@ -351,9 +363,10 @@ body {
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position: right;
-    transition:background-size 1.5s;
+    transition:background-size 0.4s;
     padding: 0 12px;
     margin-bottom: 24px;
+    filter: drop-shadow(2px 2px 4px #b5b5b5);
 }
 
   .ankimarker .title.on {
@@ -391,8 +404,9 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 0% 100%;
-    transition:background-size 3s;
+    transition:background-size 0.8s;
     padding: 0 12px;
+    filter: drop-shadow(2px 2px 4px #b5b5b5);
   }
 
 
