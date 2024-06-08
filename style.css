@@ -21,7 +21,7 @@ body {
 .merit{
     width: 380px;
     height: 380px;
-    border-radius: 290px;
+    border-radius: 190px;
     position: absolute;
 
 }
@@ -158,7 +158,9 @@ body {
     background: url(images/cloud1.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 600px;
+    height: 250px;
     margin: 32px auto;
     justify-content: center;
     align-items: center;
@@ -176,7 +178,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 64px; 
-    margin: 80px 0;
+    margin: 0;
 }
 
 
@@ -255,6 +257,8 @@ body {
 .flex_column{
     display: flex;
     column-gap: 120px;
+    width: 100%;
+    align-items: center;
 }
 
 .flex_row {
@@ -262,5 +266,6 @@ body {
     flex-direction: column;
     row-gap: 32px;
     margin: 0 auto;
-    width: fit-content;
+    align-items: center;
+    width: 100%;
 }
