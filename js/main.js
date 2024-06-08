@@ -59,7 +59,7 @@ $(document).ready(function() {
         const height = window.innerHeight;                    //画面の高さを取得
         const scroll = this.pageYOffset;                      //スクロール量
         const marker = document.querySelectorAll('.marker-anime');  //マーカーを引く要素を取得
-        const value = scroll - height + 0           //後ろの数字を弄ることで、イベント位置をずらす
+        const value = scroll - height + 100          //後ろの数字を弄ることで、イベント位置をずらす
       
         // markerクラスを持っている要素全てに処理を行う
         marker.forEach(function(element){
