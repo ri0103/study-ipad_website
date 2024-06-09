@@ -380,7 +380,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 200px;
+    margin-top: 60px;
   }
 
   .ankimarker_name_title img{
@@ -407,6 +408,59 @@ body {
     transition:background-size 0.8s;
     padding: 0 12px;
     filter: drop-shadow(2px 2px 4px #b5b5b5);
+  }
+
+  .ankicycle {
+    position: relative;
+    width: 600px;
+    height:500px;
+    margin: 0 auto;
+  }
+
+
+  .cycle_cloud{
+    width: 100%;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translateY(-50%) translateX(-50%); 
+  }
+
+  .cycle_texts{
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    font-size: 36px;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: fit-content;
+    width: 350px;
+    top: 50%; 
+    left: 10%;
+    transform: translateY(-50%); 
+  }
+
+
+.cycle_arrow{
+    width: 80px;
+    position: absolute;
+    top: 50%; 
+    right: 20%;
+    transform: translateY(-50%); 
+  }
+
+  .cycle_texts p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cycle_texts span{
+    background:linear-gradient(transparent 50%, #F9C9C9 50%);
+  }
+
+  .arrow_down{
+    margin-left: 15%;
   }
 
 
