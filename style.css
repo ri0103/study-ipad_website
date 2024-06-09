@@ -161,7 +161,7 @@ body {
 
 .mustitems{
     background-color: #D8E0E2;
-    padding: 128px 0;
+    padding: 64px 0;
     text-align: center;
 }
 
@@ -179,7 +179,7 @@ body {
     width: auto;
     padding: 4px 12px;
     background: linear-gradient(transparent 50%, #F4F0CD 50%);
-    margin-bottom: 32px;
+    margin-bottom: 64px;
     filter: drop-shadow(2px 2px 4px #b5b5b5);
     position: relative;
 }
@@ -226,6 +226,7 @@ body {
 .goodnotes{
     background-color: #CEE5EF;
     text-align: center;
+    padding: 32px 0;
 }
 
 .goodnotes .title{
